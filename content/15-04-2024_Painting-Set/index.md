@@ -1,6 +1,6 @@
 ---
 title: Painting Set
-description: A collection page with its own mini home page.
+description: A collection page with six sample elements for testing.
 ---
 
 This collection page introduces a small set of related items.

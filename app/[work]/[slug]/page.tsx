@@ -39,6 +39,7 @@ export default async function WorkChildPage({ params }: { params: Params }) {
         <header className="space-y-4">
           <p className="text-xs uppercase tracking-[0.35em] text-ink/50">{titleFromSlug(params.work)}</p>
           <h1 className="font-display text-5xl leading-none md:text-7xl">{item.title}</h1>
+          <p className="text-sm uppercase tracking-[0.25em] text-ink/45">{item.dateLabel ?? 'Most recent'}</p>
         </header>
         <div className="space-y-6 text-lg leading-8 text-ink/82">{item.content}</div>
         <Button asChild variant="outline">
