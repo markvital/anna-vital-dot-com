@@ -1,0 +1,36 @@
+{
+  "name": "anna-vital-dot-com",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "yarn content:sync && next dev",
+    "build": "yarn content:sync && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "content:sync": "node scripts/sync-content-assets.mjs",
+    "deploy:gh-pages": "yarn build && gh-pages -d out -b gh-pages -c qa.annavital.com"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^3.1.1",
+    "@radix-ui/react-slot": "^1.1.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "next": "^14.2.0",
+    "next-mdx-remote": "^5.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.3"
+  }
+}

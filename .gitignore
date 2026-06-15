@@ -1,0 +1,8 @@
+.DS_Store
+.env*
+.next
+out
+node_modules
+yarn-error.log*
+coverage
+public/content/
